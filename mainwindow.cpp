@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
   ui->setupUi(this);
 
-  EventRow * row1 = new EventRow("nedela", false, ui->listEvents);
+  EventRow * row1 = new EventRow(ui->listEvents);
   QListWidgetItem * item = new QListWidgetItem(ui->listEvents);
   item->setSizeHint(row1->size());
   ui->listEvents->addItem(item);

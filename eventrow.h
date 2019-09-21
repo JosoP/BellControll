@@ -1,27 +1,22 @@
 #ifndef EVENTROW_H
 #define EVENTROW_H
 
-#include <QLabel>
-#include <QPushButton>
-#include <QTextEdit>
 #include <QWidget>
+
+namespace Ui {
+class EventRow;
+}
 
 class EventRow : public QWidget
 {
   Q_OBJECT
 
-private:
-  QTextEdit *   m_edtName;
-  QPushButton * m_btnEnable;
-  QLabel *      m_lblSummary;
-
 public:
-  explicit EventRow(QString name, bool enable, QWidget *parent = nullptr);
   explicit EventRow(QWidget *parent = nullptr);
+  ~EventRow();
 
-signals:
-
-public slots:
+private:
+  Ui::EventRow *ui;
 };
 
 #endif // EVENTROW_H

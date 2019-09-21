@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons" lang="english">
+        <file>images/icon_minus.png</file>
+        <file>images/icon_ok.png</file>
+        <file>images/icon_plus.png</file>
+        <file>images/icon_caledar.png</file>
+        <file>images/icon_cancel.png</file>
+        <file>images/icon_clock.png</file>
+        <file>images/icon_edit.png</file>
+        <file>images/icon_save.png</file>
+    </qresource>
+</RCC>

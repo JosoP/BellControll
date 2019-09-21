@@ -34,6 +34,7 @@ HEADERS += \
         mainwindow.h
 
 FORMS += \
+        eventrow.ui \
         mainwindow.ui
 
 # Default rules for deployment.
@@ -42,3 +43,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES +=
+
+RESOURCES += \
+  images.qrc
