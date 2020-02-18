@@ -26,11 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         eventrow.cpp \
+        eventrowitem.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
         eventrow.h \
+        eventrowitem.h \
         mainwindow.h
 
 FORMS += \

@@ -1,4 +1,5 @@
 #include "eventrow.h"
+#include "eventrowitem.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -10,11 +11,15 @@ MainWindow::MainWindow(QWidget *parent) :
 {
   ui->setupUi(this);
 
-  EventRow * row1 = new EventRow(ui->listEvents);
-  QListWidgetItem * item = new QListWidgetItem(ui->listEvents);
-  item->setSizeHint(row1->size());
+
+  EventRowItem * item = new EventRowItem(ui->listEvents);
   ui->listEvents->addItem(item);
-  ui->listEvents->setItemWidget(item, row1);
+
+  EventRow * row2 = new EventRow(ui->listEvents);
+  QListWidgetItem * item2 = new QListWidgetItem(ui->listEvents);
+  item2->setSizeHint(row2->size());
+  ui->listEvents->addItem(item2);
+  ui->listEvents->setItemWidget(item2, row2);
 
 }
 

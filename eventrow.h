@@ -15,6 +15,13 @@ public:
   explicit EventRow(QWidget *parent = nullptr);
   ~EventRow();
 
+  void showEditPart(bool show);
+
+private slots:
+  void on_btnEdit_clicked();
+
+  void on_btnSave_clicked();
+
 private:
   Ui::EventRow *ui;
 };
